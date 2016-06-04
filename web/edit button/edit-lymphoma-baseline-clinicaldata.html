@@ -1,0 +1,467 @@
+<html>
+	<head>
+		<title>USTH-BCI Section of Clinical Hematology. Hematologic Disease Database</title>
+		
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="vendor/formvalidation/dist/css/formValidation.min.css">
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/formvalidation/dist/js/formValidation.min.js"></script>
+		<script src="vendor/formvalidation/dist/js/framework/bootstrap.min.js"></script> 
+	
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<nav class="navbar navbar-fixed-top" style="background-color: #2d3e50; color: white; font-family: Generica;">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav">
+						<li style="font-size: 20px; margin-top:9px; padding:3px 10px 0px 0px;"><img src="images/ustlogo.png" width="43px"/><img src="images/usthlogo.png" width="43px"/></li>
+						<li style="margin-left: 10px">
+							<p style="font-size: 20px; margin-top:9px">
+							USTH-BCI Section of Clinical Hematology</p>
+							<h4 style="margin-top:-10px;">
+							Hematologic Disease Database
+							</h4>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style="background-color: #2d3e50; margin-top:8px; padding:3px 50px 0px 0px;">
+						<li class="dropdown">
+							<a class="dropdown-toggle" id="menu" data-toggle="dropdown" href="#" style="color: white; font-size: 18px; text-align: right;">Account
+							<span class="caret"></span></a>
+							 <ul class="dropdown-menu" style="font-size: 18px">
+								<li><a href="">Settings</a></li>
+								<li><a href="">Logout</a></li>
+							</ul>
+						  </li>
+					</ul>
+				</div>
+			</nav>
+			
+			<div class="row" style="margin-top: 68px">
+				<!-- M E N U -->
+				<div class="col-lg-3" style="background-color: #f2cb32; height: 100%; position:fixed;">
+					
+					<h3 align="center"><b>Lymphoma</b></h3>
+					
+					<div class="row top-menu-label">
+						<font style="font-size: 23px;">Baseline data</font>
+					</div>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">General data</font><br/>
+					</div></a>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">Clinical data</font><br/>
+					</div></a>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">Laboratory data</font><br/>
+					</div></a>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">Therapy and response data</font><br/>
+					</div></a>
+					
+					<div class="row top-menu-label">
+						<font style="font-size: 23px;">Follow-up data</font>
+					</div>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">Medical Events Interim</font><br/>
+					</div></a>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">Clinical data</font><br/>
+					</div></a>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">Laboratory data</font><br/>
+					</div></a>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">Disease Status</font><br/>
+					</div></a>
+					
+				</div>
+				<!-- F O R M -->
+				<div class="col-lg-9 col-lg-offset-3" style="padding: 20px 70px 60px 70px;">
+					<div class="row" style="width:100%; border-bottom: 2px solid #f1c40f;">
+						<h2>Baseline Data: Clinical Data</h2>
+					</div>
+					<form action="lymphoma-baseline-laboratorydata.html" name="lymphoma-baseline-clinicaldata-form" id="lymphoma-baseline-clinicaldata-form" class="form-horizontal" method="post">
+					
+						<div class="form-group">
+							<label class="col-lg-5">Date of Initial Diagnosis</label>
+							<div class="col-lg-3">
+								<input type="date" class="form-control" name="dateOfVisit"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Diagnosis</label>
+							<div class="col-lg-6">
+								<select class="form-control" name="diagnosis">
+									<option selected="selected" disabled="disabled">Select</option>
+									<option value="">B21.1 HIV disease resulting in Burkitt lymphoma</option>
+									<option value="">B21.2 HIV disease resulting in other types of non-Hodgkin lymphoma</option>
+									<option value="">B21.3 HIV disease resulting in other malignant neoplasms of lymphoid, haematopoietic and related tissue</option>
+									<option value="">C81.0 Nodular lymphocyte predominant Hodgkin lymphoma</option>
+									<option value="">C81.1 Nodular sclerosis (classical) Hodgkin lymphoma</option>
+									<option value="">C81.2 Mixed cellularity (classical) Hodgkin lymphoma</option>
+									<option value="">C81.3 Lymphocyte depleted (classical) Hodgkin lymphoma</option>
+									<option value="">C81.4 Lymphocyte-rich (classical) Hodgkin lymphoma</option>
+									<option value="">C81.7 Other (classical) Hodgkin lymphoma</option>
+									<option value="">C81.9 Hodgkin lymphoma, unspecified</option>
+									<option value="">C82.0 Follicular lymphoma grade I</option>
+									<option value="">C82.1 Follicular lymphoma grade II</option>
+									<option value="">C82.2 Follicular lymphoma grade III, unspecified</option>
+									<option value="">C82.3 Follicular lymphoma grade IIIa</option>
+									<option value="">C82.4 Follicular lymphoma grade IIIb</option>
+									<option value="">C82.5 Diffuse follicle centre lymphoma</option>
+									<option value="">C82.6 Cutaneous follicle centre lymphoma</option>
+									<option value="">C82.7 Other types of follicular lymphoma</option>
+									<option value="">C82.9	Follicular lymphoma, unspecified</option>
+									<!-- Nodular lymphoma NOS -->
+									<option value="">C83.0 	Small cell B-cell lymphoma</option>
+									<!--	Lymphoplasmacytic lymphoma
+										Nodal marginal zone lymphoma
+										Non-leukaemic variant of B-CLL
+										Splenic marginal zone lymphoma -->
+									<option value="">C83.1	Mantle cell lymphoma</option>
+									<!--	Centrocytic lymphoma
+										Malignant lymphomatous polyposis -->
+									<option value="">C83.3Diffuse large B-cell lymphoma</option>
+									<option value="">C83.5	Lymphoblastic (diffuse) lymphoma</option>
+									<!--	B-cell precursor lymphoma
+										Lymphoblastic B-cell lymphoma
+										Lymphoblastic lymphoma NOS
+										Lymphoblastic T-cell lymphoma
+										T-cell precursor lymphoma -->
+									<option value="">C83.7	Burkitt lymphoma</option>
+									<!--	Atypical Burkitt lymphoma
+										“Burkitt-like” lymphoma -->
+									<option value="">C83.8	Other non-follicular lymphoma</option>
+									<!--	Primary effusion B-cell lymphoma
+										Intravascular large B-cell lymphoma
+										Lymphoid granulomatosis -->
+									<option value="">C83.9 Non-follicular (diffuse) lymphoma, unspecified</option>
+									<option value="">C84.0 Mycosis fungoides</option>
+									<option value="">C84.1 Sézary disease</option>
+									<option value="">C84.4	Peripheral T-cell lymphoma, not elsewhere classified</option>
+									<!--	Lennert’s lymphoma
+										Lymphoepithelioid lymphoma -->
+									<option value="">C84.5 Other mature T/NK-cell lymphomas</option>
+									<option value="">C84.6	Anaplastic large cell lymphoma, ALK-positive</option>
+									<!--	Anaplastic large cell lymphoma, CD30-positive -->
+									<option value="">C84.7	Anaplastic large cell lymphoma, ALK-negative</option>
+									<!--	Excl.:	primary cutaneous CD30-positive T-cell proliferations (C86.6) -->
+									<option value="">C84.8	Cutaneous T-cell lymphoma, unspecified</option>
+									<option value="">C84.9	Mature T/NK-cell lymphoma, unspecified</option>
+									<!--	NK/T cell lymphoma NOS
+										Excl.:	mature T-cell lymphoma, not elsewhere classified (C84.4) -->
+									<option value="">C85.1 B-cell lymphoma, unspecified</option>
+									<!--	Note:	If B-cell lineage or involvement is mentioned in conjunction with a specific lymphoma, code to the more specific description. -->
+									<option value="">C85.2	Mediastinal (thymic) large B-cell lymphoma</option>
+									<option value="">C85.7	Other specified types of non-Hodgkin lymphoma</option>
+									<option value="">C85.9	Non-Hodgkin lymphoma, unspecified</option>
+									<!--	Lymphoma NOS
+										Malignant lymphoma NOS
+										Non-Hodgkin lymphoma NOS -->
+									<option value="">C86.0 Extranodal NK/T-cell lymphoma, nasal type</option>
+									<option value="">C86.1	Hepatosplenic T-cell lymphoma</option>
+									<!--	Alpha-beta and gamma-delta types -->
+									<option value="">C86.2	Enteropathy-type (intestinal) T-cell lymphoma</option>
+									<!--	Enteropathy associated T-cell lymphoma -->
+									<option value="">C86.3	Subcutaneous panniculitis-like T-cell lymphoma</option>
+									<option value="">C86.4	Blastic NK-cell lymphoma</option>
+									<option value="">C86.5	Angioimmunoblastic T-cell lymphoma</option>
+									<!--	Angioimmunoblastic lymphadenopathy with dysproteinaemia [AILD] -->
+									<option value="">C86.6	Primary cutaneous CD30-positive T-cell proliferations</option>
+									<!--	Lymphomatoid papulosis
+										Primary cutaneous anaplastic large-cell lymphoma
+										Primary cutaneous CD30-positive large T-cell lymphoma -->
+									<option value="">C88.0	Waldenström macroglobulinaemia</option>
+									<!--	Lymphoplasmacytic lymphoma with IgM-production
+										Macroglobulinaemia (primary)(idiopathic)
+										Excl.: small cell B-cell lymphoma (C83.0) -->
+									<option value="">C88.2	Other heavy chain disease</option>
+									<!--	Franklin disease
+										Gamma heavy chain disease
+										Mu (µ) heavy chain disease -->
+									<option value="">C88.3	Immunoproliferative small intestinal disease</option>
+									<!--	Alpha heavy chain disease
+										Mediterranean lymphoma -->
+									<option value="">C88.4	Extranodal marginal zone B-cell lymphoma of mucosa-associated lymphoid tissue [MALT-lyphoma]</option>
+									<!--	Note: Use additional code (C83.3) if desired, to specify transition to high malignant (diffuse large cell) lymphoma
+										Lymphoma of skin-associated lymphoid tissue (SALT-lymphoma)
+										Lymphoma of bronchial-associated lymphoid tissue (BALT-lymphoma) -->
+									<option value="">C88.7 Other malignant immunoproliferative diseases</option>
+									<option value="">C88.9	Malignant immunoproliferative disease, unspecified</option>
+									<!--	Immunoproliferative disease NOS -->
+
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Stage of Disease</label>
+							<div class="col-lg-4">
+								<select class="form-control" name="classificationRiskStratification">
+									<option selected="selected" disabled="disabled">Select</option>
+									<option value="">AA Moderately Severe</option>
+									<option value="">AA Severe</option>
+									<option value="">AA Very Severe</option>
+									<option value="">MDS Very Low</option>
+									<option value="">MDS Low</option>
+									<option value="">MDS Intermediate</option>
+									<option value="">MDS High</option>
+									<option value="">MDS Very High</option>
+
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Chief complaint</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="chiefComplaint"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Constitutional Symptoms</label>
+							<div class="col-lg-4">
+								<select class="form-control" name="classificationRiskStratification">
+									<option selected="selected" disabled="disabled">Select</option>
+									<option value="">Fever</option>
+									<option value="">Weight Loss</option>
+									<option value="">Night Sweats</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Other Symptoms</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="otherSymptoms"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Family History of Cancer</label>
+							<div class="col-lg-1"><input type="radio" name="familyHistoryOfCancer"><label>Yes</label></div>
+							<div class="col-lg-1"><input type="radio" name="familyHistoryOfCancer"><label>No</label></div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<label class="col-lg-5">Relationship to patient</label>
+								<div class="col-lg-3">
+									<input type="text" name="relationshipToPatient[]" class="form-control"/>
+								</div>
+								<div class="col-lg-1">
+									<button type="button" class="btn btn-primary btn-sm addButton" data-template="textbox" style="width:100%; font-size:20px; font-family: Arial; padding:0px;">+</button>
+								</div>
+							</div>
+							<div class="row">
+								<label class="col-lg-5">Specify cancer</label>
+								<div class="col-lg-3">
+									<input type="text" name="cancerOfRelative[]" class="form-control"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group hide" id="textboxTemplate">
+							<div class="row">
+								<label class="col-lg-5">Relationship to patient</label>
+								<div class="col-lg-3">
+									<input type="text" name="relationshipToPatient[]" class="form-control"/>
+								</div>
+								<div class="col-lg-1">
+									<button type="button" class="btn btn-danger btn-sm removeButton" style="width:100%; font-size:20px; font-family: Arial; padding:0px;">-</button>
+								</div>
+							</div>
+							<div class="row">
+								<label class="col-lg-5">Specify cancer</label>
+								<div class="col-lg-3">
+									<input type="text" name="cancerOfRelative[]" class="form-control"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Other disease in the family</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="otherDiseaseInTheFamily"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Patient's Comorbidities</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="comorbidities"/>
+							</div>
+						</div>
+						<br/>
+						<div class="form-group">
+							<label class="col-lg-5">Concomitant Medications</label>
+							<div class="col-lg-1"><input type="radio" name="currentPastMedications"><label>Yes</label></div>
+							<div class="col-lg-1"><input type="radio" name="currentPastMedications"><label>No</label></div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<label class="col-lg-5">Generic Name</label>
+								<div class="col-lg-3">
+									<input type="text" name="genericName[]" class="form-control"/>
+								</div>
+								<div class="col-lg-1">
+									<button type="button" class="btn btn-primary btn-sm addButton" data-template="textbox2" style="width:100%; font-size:20px; font-family: Arial; padding:0px;">+</button>
+								</div>
+							</div>
+							<div class="row">
+								<label class="col-lg-5">Dose</label>
+								<div class="col-lg-3">
+									<input type="text" name="dose[]" class="form-control"/>
+								</div>
+							</div>
+							<div class="row">
+								<label class="col-lg-5">Frequency</label>
+								<div class="col-lg-3">
+									<input type="text" name="frequency[]" class="form-control"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group hide" id="textbox2Template">
+							<div class="row">
+								<label class="col-lg-5">Generic Name</label>
+								<div class="col-lg-3">
+									<input type="text" name="genericName[]" class="form-control"/>
+								</div>
+								<div class="col-lg-1">
+									<button type="button" class="btn btn-danger btn-sm removeButton" style="width:100%; font-size:20px; font-family: Arial; padding:0px;">-</button>
+								</div>
+							</div>
+							<div class="row">
+								<label class="col-lg-5">Dose</label>
+								<div class="col-lg-3">
+									<input type="text" name="dose[]" class="form-control"/>
+								</div>
+							</div>
+							<div class="row">
+								<label class="col-lg-5">Frequency</label>
+								<div class="col-lg-3">
+									<input type="text" name="frequency[]" class="form-control"/>
+								</div>
+							</div>
+						</div>
+						<br/>
+						<div class="form-group">
+							<label class="col-lg-5">Smoking history </label>
+							<div class="col-lg-1"><input type="radio" name="smokingHistory"><label>Yes</label></div>
+							<div class="col-lg-1"><input type="radio" name="smokingHistory"><label>No</label></div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Specify</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="smokingHistorySpecify"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Chemical exposure</label>
+							<div class="col-lg-1"><input type="radio" name="chemicalExposure"><label>Yes</label></div>
+							<div class="col-lg-1"><input type="radio" name="chemicalExposure"><label>No</label></div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Specify</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="chemicalExposureSpecify"/>
+							</div>
+						</div>
+						<div class="form-group" style="margin-bottom: 0px">
+							<label class="col-lg-5"><h3>Physical Exam</h3></label>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Height</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="height"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Weight</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="weight"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">ECOG</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="ecog"/>
+							</div>
+						</div>
+						<br/>
+						<div class="form-group">
+							<label class="col-lg-5">Presence of Splenomegaly</label>
+							<div class="col-lg-1"><input type="radio" name="splenomegaly"><label>Yes</label></div>
+							<div class="col-lg-1"><input type="radio" name="splenomegaly"><label>No</label></div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Specify</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="splenomegalySpecify"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Presence of Hepatomegaly</label>
+							<div class="col-lg-1"><input type="radio" name="hepatomegaly"><label>Yes</label></div>
+							<div class="col-lg-1"><input type="radio" name="hepatomegaly"><label>No</label></div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Specify</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="hepatomegalySpecify"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Presence of Lymphadenopathies</label>
+							<div class="col-lg-1"><input type="radio" name="lymphadenopathies"><label>Yes</label></div>
+							<div class="col-lg-1"><input type="radio" name="lymphadenopathies"><label>No</label></div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Specify</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="lymphadenopathiesSpecify"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Other Findings</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="otherFindings"/>
+							</div>
+						</div>
+						
+						<br/><br/>
+						
+						<div class="row">
+							<div class="col-lg-7"></div>
+							<div class="col-lg-3">
+								<button form="form6" type="submit" class="btn btn-primary" style="width:100%; font-size: 20px;">Next</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(document).ready(function() {
+			$('.addButton').on('click', function() {
+				var index = $(this).data('index');
+				if (!index) {
+					index = 1;
+					$(this).data('index', 1);
+				}
+				index++;
+				$(this).data('index', index);
+
+				var template     = $(this).attr('data-template'),
+					$templateEle = $('#' + template + 'Template'),
+					$row         = $templateEle.clone().removeAttr('id').insertBefore($templateEle).removeClass('hide'),
+					$el          = $row.find('input').eq(0).attr('name', template + '[]');
+				$('#aapnhmds-baseline-clinicaldata-form').formValidation('addField', $el);
+
+				
+
+				$row.on('click', '.removeButton', function(e) {
+					$('#aapnhmds-baseline-clinicaldata-form').formValidation('removeField', $el);
+					$row.remove();
+				});
+			});
+		});
+	</script>
+</html>

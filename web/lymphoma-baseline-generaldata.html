@@ -1,0 +1,233 @@
+<html>
+	<head>
+		<title>USTH-BCI Section of Clinical Hematology. Hematologic Disease Database</title>
+		
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="vendor/formvalidation/dist/css/formValidation.min.css">
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/formvalidation/dist/js/formValidation.min.js"></script>
+		<script src="vendor/formvalidation/dist/js/framework/bootstrap.min.js"></script> 
+	
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<nav class="navbar navbar-fixed-top" style="background-color: #2d3e50; color: white; font-family: Generica;">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav">
+						<li style="font-size: 20px; margin-top:9px; padding:3px 10px 0px 0px;"><img src="images/ustlogo.png" width="43px"/><img src="images/usthlogo.png" width="43px"/></li>
+						<li style="margin-left: 10px">
+							<p style="font-size: 20px; margin-top:9px">
+							USTH-BCI Section of Clinical Hematology</p>
+							<h4 style="margin-top:-10px;">
+							Hematologic Disease Database
+							</h4>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style="background-color: #2d3e50; margin-top:8px; padding:3px 50px 0px 0px;">
+						<li class="dropdown">
+							<a class="dropdown-toggle" id="menu" data-toggle="dropdown" href="#" style="color: white; font-size: 18px; text-align: right;">Account
+							<span class="caret"></span></a>
+							 <ul class="dropdown-menu" style="font-size: 18px">
+								<li><a href="">Settings</a></li>
+								<li><a href="">Logout</a></li>
+							</ul>
+						  </li>
+					</ul>
+				</div>
+			</nav>
+			
+			<div class="row" style="margin-top: 68px">
+				<!-- M E N U -->
+				<div class="col-lg-3" style="background-color: #f2cb32; height: 100%; position:fixed;">
+					
+					<h3 align="center"><b>Lymphoma</b></h3>
+					
+					<div class="row top-menu-label">
+						<font style="font-size: 23px;">Baseline data</font>
+					</div>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">General data</font><br/>
+					</div></a>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">Clinical data</font><br/>
+					</div></a>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">Laboratory data</font><br/>
+					</div></a>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">Therapy and response data</font><br/>
+					</div></a>
+					
+					<div class="row top-menu-label">
+						<font style="font-size: 23px;">Follow-up data</font>
+					</div>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">Medical Events Interim</font><br/>
+					</div></a>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">Clinical data</font><br/>
+					</div></a>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">Laboratory data</font><br/>
+					</div></a>
+					<a href="#"><div class="row menu-label">
+						<font style="font-size: 20px;">Disease Status</font><br/>
+					</div></a>
+					
+				</div>
+				<!-- F O R M -->
+				<div class="col-lg-9 col-lg-offset-3" style="padding: 20px 70px 20px 70px;">
+					<div class="row" style="width:100%; border-bottom: 2px solid #f1c40f;">
+						<h2>Baseline Data: General Data</h2>
+					</div>
+					<form action="lymphoma-baseline-clinicaldata.html" name="lymphoma-baseline-generaldata-form" id="leukemia-baseline-generaldata-form" class="form-horizontal" method="post">
+						
+						<div class="form-group">
+							<label class="col-lg-5">Patient ID Number</label>
+							<div class="col-lg-2">
+								<select class="form-control" name="patientIDNumber">
+									<option value="">PBC</option>
+									<option value="">IDC</option>
+									<option value="">JCJ</option>
+									<option value="">PRM</option>
+									<option value="">FZM</option>
+									<option value="">CD</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Last name</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="lastName"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">First name</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="firstName"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Middle initial</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="middleInitial"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Gender</label>
+							<div class="col-lg-3">
+								<select class="form-control" name="gender">
+									<option value="">Male</option>
+									<option value="">Female</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Date of Birth</label>
+							<div class="col-lg-3">
+								<input type="date" class="form-control" name="dateOfBirth"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Address</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="address"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Civil Status</label>
+							<div class="col-lg-3">
+								<select class="form-control" name="civilStatus">
+									<option value="">Single</option>
+									<option value="">Married</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Occupation</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" name="occupation"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Date of Entry</label>
+							<div class="col-lg-3">
+								<input type="date" class="form-control" name="dateOfEntry"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Tissue Specimen Collected</label>
+							<div class="col-lg-1"><input type="radio" name="specimen"><label>Yes</label></div>
+							<div class="col-lg-1"><input type="radio" name="specimen"><label>No</label></div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5">Specimen</label>
+							<div class="col-lg-4">
+								<select class="form-control" name="specimen[]">
+									<option value="">BMA</option>
+									<option value="">BB</option>
+									<option value="">LN</option>
+								</select>
+							</div>
+							<div class="col-lg-1">
+								<button type="button" class="btn btn-primary btn-sm addButton" data-template="textbox" style="width:100%; font-size:20px; font-family: Arial; padding:0px;">+</button>
+							</div>
+						</div>
+						<div class="form-group hide" id="textboxTemplate">
+							<label class="col-lg-5">Specimen Number</label>
+							<div class="col-lg-4">
+								<select class="form-control" name="specimen[]">
+									<option value="">BMA</option>
+									<option value="">BB</option>
+									<option value="">LN</option>
+								</select>
+							</div>
+							<div class="col-lg-1">
+								<button type="button" class="btn btn-danger btn-sm removeButton" style="width:100%; font-size:20px; font-family: Arial; padding:0px;">-</button>
+							</div>
+						</div>
+						
+						<br/><br/>
+						
+						<div class="row">
+							<div class="col-lg-7"></div>
+							<div class="col-lg-3">
+								<button form="form6" type="submit" class="btn btn-primary" style="width:100%; font-size: 20px;">Next</button>
+						</div>
+				</div>
+					</form>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(document).ready(function() {
+			$('.addButton').on('click', function() {
+				var index = $(this).data('index');
+				if (!index) {
+					index = 1;
+					$(this).data('index', 1);
+				}
+				index++;
+				$(this).data('index', index);
+
+				var template     = $(this).attr('data-template'),
+					$templateEle = $('#' + template + 'Template'),
+					$row         = $templateEle.clone().removeAttr('id').insertBefore($templateEle).removeClass('hide'),
+					$el          = $row.find('input').eq(0).attr('name', template + '[]');
+				$('#aapnhmds-baseline-generaldata-form').formValidation('addField', $el);
+
+				
+
+				$row.on('click', '.removeButton', function(e) {
+					$('#aapnhmds-baseline-generaldata-form').formValidation('removeField', $el);
+					$row.remove();
+				});
+			});
+		});
+	</script>
+</html>

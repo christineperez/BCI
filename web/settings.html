@@ -1,0 +1,282 @@
+<html>
+	<head>
+		<title>USTH-BCI Section of Clinical Hematology. Hematologic Disease Database</title>
+		
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link href="vendor/formvalidation/dist/css/formValidation.min.css" rel="stylesheet">
+		<link href="css/jquery.dataTables.min.css" rel="stylesheet">
+		<link href="css/dataTables.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/formvalidation/dist/js/formValidation.min.js"></script>
+		<script src="vendor/formvalidation/dist/js/framework/bootstrap.min.js"></script>
+		<script src="js/dataTables.bootstrap.min.js"></script>
+		<script src="js/jquery.dataTables.min.js"></script>
+		<script src="js/dataTables.min.js"></script>
+		
+		<style>
+			#puta:hover {
+				background-color: #f1c40f;
+			}
+			
+			#puta:focus {
+				background-color: #f1c40f;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			
+			<nav class="navbar navbar-fixed-top" style="background-color: #2d3e50; color: white; font-family: Generica;">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav">
+						<li style="font-size: 20px; margin-top:9px; padding:3px 10px 0px 0px;"><img src="images/ustlogo.png" width="43px"/><img src="images/usthlogo.png" width="43px"/></li>
+						<li style="margin-left: 10px">
+							<p style="font-size: 20px; margin-top:9px">
+							USTH-BCI Section of Clinical Hematology</p>
+							<h4 style="margin-top:-10px;">
+							Hematologic Disease Database
+							</h4>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style="background-color: #2d3e50; margin-top:8px; padding:3px 50px 0px 0px;">
+						<li class="dropdown">
+							<a class="dropdown-toggle" id="puta" data-toggle="dropdown" href="#" style="color: white; font-size: 18px; text-align: right;">Account
+							<span class="caret"></span></a>
+							 <ul class="dropdown-menu" style="font-size: 18px">
+								<li><a href="">Settings</a></li>
+								<li><a href="">Logout</a></li>
+							</ul>
+						  </li>
+					</ul>
+				</div>
+			</nav>
+			<div class="row" style="margin-top: 68px">
+				<!-- M E N U -->
+				<div class="col-lg-3" style="background-color: #f2cb32; height: 100%; position:fixed;">
+					
+					<br/><br/>
+					
+					<a href="#generalsettings" data-toggle="tab"><div class="row top-menu-label">
+						<font style="font-size: 23px;">General Acccount Settings</font>
+					</div></a>
+					<a href="#createaccount" data-toggle="tab"><div class="row top-menu-label-even">
+						<font style="font-size: 23px;">Create Account</font>
+					</div></a>
+					
+				</div>
+				
+				
+				<div class="tab-content" style="margin-top: 20px; width:85%; margin-left: 100px; ">
+					
+					<!-- General settings -->
+					<div id="generalsettings" class="tab-pane fade" style="margin-left: 300px;">
+						<div class="row" style="width:100%; border-bottom: 2px solid #f1c40f;">
+							<h2>General Account Settings</h2>
+						</div>
+						<table class="row" width="100%" id="table1" style="font-size:16pt; font-family: trebuchet ms">
+							<tbody>
+								<tr>
+									<td class="col-lg-2">Name</td>
+									<td class="col-lg-2" style="color: gray;">Anastasha Diaz</td>
+									<td class="col-lg-2"><a data-toggle="modal" href="#editNameModal" class="btn btn-info" style="font-size:18px; width:35%; padding: 5px;">Edit</a></td>
+								</tr>
+								<tr>
+									<td class="col-lg-2">Username</td>
+									<td class="col-lg-2" style="color: gray;">bambinadiaz</td>
+									<td class="col-lg-2"><a data-toggle="modal" href="#editUsernameModal" class="btn btn-info" style="font-size:18px; width:35%; padding: 5px;">Edit</a></td>
+								</tr>
+								<tr>
+									<td class="col-lg-2">Password</td>
+									<td class="col-lg-2" style="color: gray;"><input type="password" value="password" style="background: none; border: 0;" disabled></td>
+									<td class="col-lg-2"><a data-toggle="modal" href="#editPasswordModal" class="btn btn-info" style="font-size:18px; width:35%; padding: 5px;">Edit</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<!-- Create account -->
+					<div id="createaccount" class="tab-pane fade" style="margin-left: 300px;">
+						<div class="row" style="width:100%; border-bottom: 2px solid #f1c40f;">
+							<h2>Create Account</h2>
+							
+						</div>
+					</div>
+					
+				</div>
+					
+						
+				
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modals -->
+		
+		<!--Edit Name Modal -->
+		<div class="modal fade" id="editNameModal" role="dialog" style="margin-top:10%;">
+			<div class="modal-dialog" style="padding:20px;">
+				<div class="modal-content">
+					<div class="modal-header" style="text-align: center;">
+						<div class="row">
+							<div class="col-lg-3"></div>
+							<div class="col-lg-6"><h3>Edit Name</h3></div>
+							<div class="col-lg-3"></div>
+						</div>
+					</div>
+					<div style="margin-top: 20px; margin-bottom: 20px;">	
+						
+						<form action="editname" name="editnameform" id="editnameform" method="post">
+						<div class="row">
+							<div class="col-lg-3"></div>
+							<div class="col-lg-3">First Name</div>
+							<div class="col-lg-4"><input type="text" name="firstname" id="firstname" value="Anastasha" class="form-control"></div>
+							<div class="col-lg-2"></div>
+						</div>
+						<br/>
+						<div class="row">
+							<div class="col-lg-3"></div>
+							<div class="col-lg-3">Middle Name</div>
+							<div class="col-lg-4"><input type="text" name="middlename" id="middlename" placeholder="Optional" class="form-control"></div>
+							<div class="col-lg-2"></div>
+						</div>
+						<br/>
+						<div class="row">
+							<div class="col-lg-3"></div>
+							<div class="col-lg-3">Last Name</div>
+							<div class="col-lg-4"><input type="text" name="lastname" id="lastname" value="Diaz" class="form-control"></div>
+							<div class="col-lg-2"></div>
+						</div>
+						<br/>
+						<div class="row">
+							<div class="col-lg-6"></div>
+							<div class="col-lg-4"><button type="submit" class="btn btn-success" style="width:100%; font-size:16px;">Save Changes</button></div>
+							<div class="col-lg-2"></div>
+						</div>
+						
+						</form>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Edit Username Modal -->
+		<div class="modal fade" id="editUsernameModal" role="dialog" style="margin-top:10%;">
+			<div class="modal-dialog" style="padding:20px;">
+				<div class="modal-content">
+					<div class="modal-header" style="text-align: center;">
+						<div class="row">
+							<div class="col-lg-3"></div>
+							<div class="col-lg-6"><h3>Edit Username</h3></div>
+							<div class="col-lg-3"></div>
+						</div>
+					</div>
+					<div style="margin-top: 20px; margin-bottom: 20px;">	
+						<form action="editusername" name="editusernameform" id="editusernameform" method="post">
+							<div class="row">
+								<div class="col-lg-3"></div>
+								<div class="col-lg-3">Username</div>
+								<div class="col-lg-4"><input type="text" name="username" id="username" value="bambinadiaz" class="form-control"></div>
+								<div class="col-lg-2"></div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col-lg-6"></div>
+								<div class="col-lg-4"><button type="submit" class="btn btn-success" style="width:100%; font-size:16px;">Save Changes</button></div>
+								<div class="col-lg-2"></div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Edit password-->
+		<div class="modal fade" id="editPasswordModal" role="dialog" style="margin-top:10%;">
+			<div class="modal-dialog" style="padding:20px;">
+				<div class="modal-content">
+					<div class="modal-header" style="text-align: center;">
+						<div class="row">
+							<div class="col-lg-3"></div>
+							<div class="col-lg-6"><h3>Edit Password</h3></div>
+							<div class="col-lg-3"></div>
+						</div>
+					</div>
+					<div style="margin-top: 20px; margin-bottom: 20px;">	
+						<form action="editpassword" name="editpasswordform" id="editpasswordform" method="post">
+							<div class="row">
+								<div class="col-lg-2"></div>
+								<div class="col-lg-4">Current Password</div>
+								<div class="col-lg-4"><input type="password" name="oldpassword" id="oldpassword" class="form-control"></div>
+								<div class="col-lg-2"></div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col-lg-2"></div>
+								<div class="col-lg-4">New Password</div>
+								<div class="col-lg-4"><input type="password" name="oldpassword" id="oldpassword" class="form-control"></div>
+								<div class="col-lg-2"></div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col-lg-2"></div>
+								<div class="col-lg-4">Re-type New Password</div>
+								<div class="col-lg-4"><input type="password" name="oldpassword" id="oldpassword" class="form-control"></div>
+								<div class="col-lg-2"></div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col-lg-6"></div>
+								<div class="col-lg-4"><button type="submit" class="btn btn-success" style="width:100%; font-size:16px;">Save Changes</button></div>
+								<div class="col-lg-2"></div>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</body>
+	
+	<script>
+		$(document).ready(function() {
+			$('.addButton').on('click', function() {
+				var index = $(this).data('index');
+				if (!index) {
+					index = 1;
+					$(this).data('index', 1);
+				}
+				index++;
+				$(this).data('index', index);
+
+				var template     = $(this).attr('data-template'),
+					$templateEle = $('#' + template + 'Template'),
+					$row         = $templateEle.clone().removeAttr('id').insertBefore($templateEle).removeClass('hide'),
+					$el          = $row.find('input').eq(0).attr('name', template + '[]');
+				$('#aapnhmds-baseline-generaldata-form').formValidation('addField', $el);
+
+				
+
+				$row.on('click', '.removeButton', function(e) {
+					$('#aapnhmds-baseline-generaldata-form').formValidation('removeField', $el);
+					$row.remove();
+				});
+			});
+		});
+		
+		$(document).ready(function(){
+			$('#table1').dataTable();
+		});
+	</script>
+</html>
