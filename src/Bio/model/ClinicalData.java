@@ -3,6 +3,7 @@ package Bio.model;
 import java.sql.Date;
 
 public class ClinicalData {
+private int clinicalDataId;
 private Date dateOfVisit;
 private String diagnosis;
 private String classificationRiskStratification;
@@ -25,6 +26,12 @@ private String weight;
 private String ecog;
 private String pertinentOtherFindings;
 
+public int getClinicalDataId() {
+	return clinicalDataId;
+}
+public void setClinicalDataId(int clinicalDataId) {
+	this.clinicalDataId = clinicalDataId;
+}
 public Date getDateOfVisit() {
 	return dateOfVisit;
 }
