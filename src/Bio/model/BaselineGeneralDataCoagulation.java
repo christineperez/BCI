@@ -2,8 +2,9 @@ package Bio.model;
 
 import java.sql.Date;
 
-public class BaselineGeneralData {
+public class BaselineGeneralDataCoagulation {
 	private int patientIDNumber;
+	private int baselineGeneralDataCoagulationId;
 	private String lastName;
 	private String firstName;
 	private String middleInitial;
@@ -12,15 +13,21 @@ public class BaselineGeneralData {
 	private String civilStatus;
 	private String occupation;
 	private Date dateOfEntry;
-	private Date dateOfBirth;
-	private String[] specimen;
-
+	
 	public int getPatientIDNumber() {
 		return patientIDNumber;
 	}
 
 	public void setPatientIDNumber(int patientIDNumber) {
 		this.patientIDNumber = patientIDNumber;
+	}
+
+	public int getBaselineGeneralDataCoagulationId() {
+		return baselineGeneralDataCoagulationId;
+	}
+
+	public void setBaselineGeneralDataCoagulationId(int baselineGeneralDataCoagulationId) {
+		this.baselineGeneralDataCoagulationId = baselineGeneralDataCoagulationId;
 	}
 
 	public String getLastName() {
@@ -45,6 +52,14 @@ public class BaselineGeneralData {
 
 	public void setMiddleInitial(String middleInitial) {
 		this.middleInitial = middleInitial;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
 	public String getAddress() {
@@ -79,28 +94,4 @@ public class BaselineGeneralData {
 		this.dateOfEntry = dateOfEntry;
 	}
 
-	public String[] getSpecimen() {
-		return specimen;
-	}
-
-	public void setSpecimen(String[] specimen) {
-		this.specimen = specimen;
-	}
-
-	public String getGender() {
-		return gender;
-	}
-
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
-
-	public Date getDateOfBirth() {
-		return dateOfBirth;
-	}
-
-	public void setDateOfBirth(Date dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
-	}
- 
 }

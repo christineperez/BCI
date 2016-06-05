@@ -3,7 +3,7 @@ package Bio.model;
 import java.sql.Date;
 
 public class BaselineClinicalDataCoagulation {
-	private int BaselineClinicalDataCoagulationId;
+	private int baselineClinicalDataCoagulationId;
 	private Date dateOfVisit;
 	private String diagnosis;
 	private String othersSpecify;
@@ -24,11 +24,13 @@ public class BaselineClinicalDataCoagulation {
 	private Boolean presenceOfHemarthroses;
 	private Boolean presenceOfContracturesAndMuscleAtrophy;
 	private String otherFindings;
+	
+	
 	public int getBaselineClinicalDataCoagulationId() {
-		return BaselineClinicalDataCoagulationId;
+		return baselineClinicalDataCoagulationId;
 	}
 	public void setBaselineClinicalDataCoagulationId(int baselineClinicalDataCoagulationId) {
-		BaselineClinicalDataCoagulationId = baselineClinicalDataCoagulationId;
+		this.baselineClinicalDataCoagulationId = baselineClinicalDataCoagulationId;
 	}
 	public Date getDateOfVisit() {
 		return dateOfVisit;
