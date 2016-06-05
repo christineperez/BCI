@@ -90,7 +90,7 @@
 						<div class="form-group">
 							<label class="col-lg-5">Mode of treatment </label>
 							<div class="col-lg-5">
-								<select class="form-control" name="">
+								<select class="form-control" name="modeOfTreatment">
 									<option selected="selected" disabled="disabled">Select</option>
 									<option value="">Hematopoietic Stem Cell Transplantation</option>
 									<option value="">Pharmacologic Treatment </option>
@@ -109,7 +109,7 @@
 						<div class="form-group">
 							<label class="col-lg-5">Chemotherapy Medications</label>
 							<div class="col-lg-4">
-								<input type="text" name="chemomedications[]" class="form-control"/>
+								<input type="text" name="chemoMedications[]" class="form-control"/>
 							</div>
 							<div class="col-lg-1">
 								<button type="button" class="btn btn-primary btn-sm addButton" data-template="chemomedications" style="width:100%; font-size:20px; font-family: Arial; padding:0px;">+</button>
@@ -118,22 +118,22 @@
 						<div class="form-group hide" id="chemomedicationsTemplate">
 							<label class="col-lg-5">Chemotherapy Medications</label>
 							<div class="col-lg-4">
-								<input type="text" name="chemomedications[]" class="form-control"/>
+								
 							</div>
-							<div class="col-lg-1">
+							<input type="text" name="chemomedications[]" class="form-control"><div class="col-lg-1">
 								<button type="button" class="btn btn-danger btn-sm removeButton" style="width:100%; font-size:20px; font-family: Arial; padding:0px;">-</button>
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="col-lg-5">Cycle Number</label>
 							<div class="col-lg-2">
-								<input type="text" class="form-control" name="cyclenumber"/>
+								<input type="text" class="form-control" name="cycleNumber"/>
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="col-lg-5">Date Started</label>
 							<div class="col-lg-3">
-								<input type="date" class="form-control" name="datestarted"/>
+								<input type="date" class="form-control" name="dateStarted"/>
 							</div>
 						</div>
 						<div class="form-group">
@@ -146,7 +146,7 @@
 						<div class="form-group">
 							<label class="col-lg-5">Disease Status</label>
 							<div class="col-lg-5">
-								<select class="form-control" name="diseasestatus">
+								<select class="form-control" name="diseaseStatus">
 									<option selected="selected" disabled="disabled">Select</option>
 									<option value="">Relapsed<option>
 									<option value="">Refractory Disease<option>
