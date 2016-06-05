@@ -8,7 +8,7 @@ public class FollowUpMedicalEventsInterim {
 	private Date dateOfVisit;
 	private String hematologicalMalignancy;
 	private String concomitantMedications;
-	private String procdeureOrIntervention;
+	private String procedureOrIntervention;
 	private String[] sample;
 
 	public int getFollowUpMedicalEventsInterimId() {
@@ -52,11 +52,11 @@ public class FollowUpMedicalEventsInterim {
 	}
 
 	public String getProcdeureOrIntervention() {
-		return procdeureOrIntervention;
+		return procedureOrIntervention;
 	}
 
-	public void setProcdeureOrIntervention(String procdeureOrIntervention) {
-		this.procdeureOrIntervention = procdeureOrIntervention;
+	public void setProcdeureOrIntervention(String procedureOrIntervention) {
+		this.procedureOrIntervention = procedureOrIntervention;
 	}
 
 	public String[] getSample() {
