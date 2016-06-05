@@ -4,6 +4,7 @@ import java.sql.Date;
 
 public class BaselineGeneralData {
 	private int patientIDNumber;
+	private int baselineGeneralDataId;
 	private String lastName;
 	private String firstName;
 	private String middleInitial;
@@ -25,6 +26,14 @@ public class BaselineGeneralData {
 
 	public String getLastName() {
 		return lastName;
+	}
+
+	public int getBaselineGeneralDataId() {
+		return baselineGeneralDataId;
+	}
+
+	public void setBaselineGeneralDataId(int baselineGeneralDataId) {
+		this.baselineGeneralDataId = baselineGeneralDataId;
 	}
 
 	public void setLastName(String lastName) {
