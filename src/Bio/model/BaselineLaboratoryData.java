@@ -43,7 +43,7 @@ public class BaselineLaboratoryData {
 	private String resultFlowCytometry;
 	private InputStream[] attachedFlowCytometry;
 	private String resultCytogenicAndMolecularAnalysisAaAndPnh;
-	private InputStream[] attachedCytogenicAndMolecularAnalysis;
+	private InputStream[] attachedCytogenicAndMolecularAnalysisAaAndPnh;
 	private String resultCytogenicAndMolecularAnalysisMds;
 	private InputStream[] attachedCytogenicAndMolecularAnalysisMds;
 
@@ -359,12 +359,13 @@ public class BaselineLaboratoryData {
 		this.resultCytogenicAndMolecularAnalysisAaAndPnh = resultCytogenicAndMolecularAnalysisAaAndPnh;
 	}
 
-	public InputStream[] getAttachedCytogenicAndMolecularAnalysis() {
-		return attachedCytogenicAndMolecularAnalysis;
+	public InputStream[] getAttachedCytogenicAndMolecularAnalysisAaAndPnh() {
+		return attachedCytogenicAndMolecularAnalysisAaAndPnh;
 	}
 
-	public void setAttachedCytogenicAndMolecularAnalysis(InputStream[] attachedCytogenicAndMolecularAnalysis) {
-		this.attachedCytogenicAndMolecularAnalysis = attachedCytogenicAndMolecularAnalysis;
+	public void setAttachedCytogenicAndMolecularAnalysisAaAndPnh(
+			InputStream[] attachedCytogenicAndMolecularAnalysisAaAndPnh) {
+		this.attachedCytogenicAndMolecularAnalysisAaAndPnh = attachedCytogenicAndMolecularAnalysisAaAndPnh;
 	}
 
 	public String getResultCytogenicAndMolecularAnalysisMds() {
