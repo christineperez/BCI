@@ -3,8 +3,8 @@ package Bio.model;
 import java.io.InputStream;
 import java.sql.Date;
 
-public class BaselineLaboratoryDataLymphoma {
-	private int baselineLaboratoryDataLymphomaId;
+public class BaselineLaboratoryDataMyelo {
+	private int baselineLaboratoryDataLymphomaI;
 	private Date dateOfBloodCollection;
 	// Hematology
 	private Boolean notDoneHematology;
@@ -25,123 +25,38 @@ public class BaselineLaboratoryDataLymphoma {
 	private Boolean notDoneLabParameterBloodChemistry;
 	private String creatinine;
 	private String uricAcid;
-	private String na;
-	private String k;
-	private String bilirubin;
-	private String total;
-	private String direct;
-	private String indirect;
 	private String sgot;
 	private String sgpt;
-	private String beta2Microglobulin;
-	private String hepatitisBTesting;
 	private String ldh;
-	private String esr;
-	private Date datePerformedHema;
-	private String resultHema;
-	private Date datePerformedImmuno;
-	private String resultImmuno;
-	private String resultImagingStudies;
+	private String epo;
 	private Date datePerformedBoneMarrow;
 	private String descriptionBoneMarrowAspirateAndBiopsyResult;
 	private InputStream[] attachedBoneMarrowAspirateAndBiopsyResult;
-	private String resultFlowCytometry;
+	private String resultMolecularAnalysis;
 	private InputStream[] attachedFlowCytometry;
 
-	public int getBaselineLaboratoryDataLymphoma() {
-		return baselineLaboratoryDataLymphomaId;
+	public int getBaselineLaboratoryDataLymphomaI() {
+		return baselineLaboratoryDataLymphomaI;
 	}
 
-	public void setBaselineLaboratoryDataLymphoma(int baselineLaboratoryDataLymphomaId) {
-		this.baselineLaboratoryDataLymphomaId = baselineLaboratoryDataLymphomaId;
+	public void setBaselineLaboratoryDataLymphomaI(int baselineLaboratoryDataLymphomaI) {
+		this.baselineLaboratoryDataLymphomaI = baselineLaboratoryDataLymphomaI;
 	}
 
-	public String getBilirubin() {
-		return bilirubin;
+	public String getEpo() {
+		return epo;
 	}
 
-	public void setBilirubin(String bilirubin) {
-		this.bilirubin = bilirubin;
+	public void setEpo(String epo) {
+		this.epo = epo;
 	}
 
-	public String getTotal() {
-		return total;
+	public String getResultMolecularAnalysis() {
+		return resultMolecularAnalysis;
 	}
 
-	public void setTotal(String total) {
-		this.total = total;
-	}
-
-	public String getDirect() {
-		return direct;
-	}
-
-	public void setDirect(String direct) {
-		this.direct = direct;
-	}
-
-	public String getIndirect() {
-		return indirect;
-	}
-
-	public void setIndirect(String indirect) {
-		this.indirect = indirect;
-	}
-
-	public String getBeta2Microglobulin() {
-		return beta2Microglobulin;
-	}
-
-	public void setBeta2Microglobulin(String beta2Microglobulin) {
-		this.beta2Microglobulin = beta2Microglobulin;
-	}
-
-	public String getHepatitisBTesting() {
-		return hepatitisBTesting;
-	}
-
-	public void setHepatitisBTesting(String hepatitisBTesting) {
-		this.hepatitisBTesting = hepatitisBTesting;
-	}
-
-	public String getEsr() {
-		return esr;
-	}
-
-	public void setEsr(String esr) {
-		this.esr = esr;
-	}
-
-	public Date getDatePerformedHema() {
-		return datePerformedHema;
-	}
-
-	public void setDatePerformedHema(Date datePerformedHema) {
-		this.datePerformedHema = datePerformedHema;
-	}
-
-	public String getResultHema() {
-		return resultHema;
-	}
-
-	public void setResultHema(String resultHema) {
-		this.resultHema = resultHema;
-	}
-
-	public Date getDatePerformedImmuno() {
-		return datePerformedImmuno;
-	}
-
-	public void setDatePerformedImmuno(Date datePerformedImmuno) {
-		this.datePerformedImmuno = datePerformedImmuno;
-	}
-
-	public String getResultImmuno() {
-		return resultImmuno;
-	}
-
-	public void setResultImmuno(String resultImmuno) {
-		this.resultImmuno = resultImmuno;
+	public void setResultMolecularAnalysis(String resultMolecularAnalysis) {
+		this.resultMolecularAnalysis = resultMolecularAnalysis;
 	}
 
 	public Date getDatePerformedBoneMarrow() {
@@ -150,14 +65,6 @@ public class BaselineLaboratoryDataLymphoma {
 
 	public void setDatePerformedBoneMarrow(Date datePerformedBoneMarrow) {
 		this.datePerformedBoneMarrow = datePerformedBoneMarrow;
-	}
-
-	public String getResultFlowCytometry() {
-		return resultFlowCytometry;
-	}
-
-	public void setResultFlowCytometry(String resultFlowCytometry) {
-		this.resultFlowCytometry = resultFlowCytometry;
 	}
 
 	public Date getDateOfBloodCollection() {
@@ -272,22 +179,6 @@ public class BaselineLaboratoryDataLymphoma {
 		this.uricAcid = uricAcid;
 	}
 
-	public String getNa() {
-		return na;
-	}
-
-	public void setNa(String na) {
-		this.na = na;
-	}
-
-	public String getK() {
-		return k;
-	}
-
-	public void setK(String k) {
-		this.k = k;
-	}
-
 	public String getSgot() {
 		return sgot;
 	}
@@ -310,14 +201,6 @@ public class BaselineLaboratoryDataLymphoma {
 
 	public void setLdh(String ldh) {
 		this.ldh = ldh;
-	}
-
-	public String getResultImagingStudies() {
-		return resultImagingStudies;
-	}
-
-	public void setResultImagingStudies(String resultImagingStudies) {
-		this.resultImagingStudies = resultImagingStudies;
 	}
 
 	public String getMyelocytes() {
