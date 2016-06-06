@@ -7,7 +7,7 @@ public class BaselineLaboratoryDataLymphoma {
 	private int baselineLaboratoryDataLymphomaId;
 	private Date dateOfBloodCollection;
 	// Hematology
-	private Boolean notDoneHematology;
+	private boolean notDoneHematology;
 	private String hemoglobin;
 	private String hematocrit;
 	private String whiteBloodCells;
@@ -22,7 +22,7 @@ public class BaselineLaboratoryDataLymphoma {
 	private String plateletCount;
 
 	// Blood Chemistry
-	private Boolean notDoneLabParameterBloodChemistry;
+	private boolean notDoneLabParameterBloodChemistry;
 	private String creatinine;
 	private String uricAcid;
 	private String na;
@@ -168,11 +168,11 @@ public class BaselineLaboratoryDataLymphoma {
 		this.dateOfBloodCollection = dateOfBloodCollection;
 	}
 
-	public Boolean getNotDoneHematology() {
+	public boolean getNotDoneHematology() {
 		return notDoneHematology;
 	}
 
-	public void setNotDoneHematology(Boolean notDoneHematology) {
+	public void setNotDoneHematology(boolean notDoneHematology) {
 		this.notDoneHematology = notDoneHematology;
 	}
 
@@ -248,11 +248,11 @@ public class BaselineLaboratoryDataLymphoma {
 		this.plateletCount = plateletCount;
 	}
 
-	public Boolean getNotDoneLabParameterBloodChemistry() {
+	public boolean getNotDoneLabParameterBloodChemistry() {
 		return notDoneLabParameterBloodChemistry;
 	}
 
-	public void setNotDoneLabParameterBloodChemistry(Boolean notDoneLabParameterBloodChemistry) {
+	public void setNotDoneLabParameterBloodChemistry(boolean notDoneLabParameterBloodChemistry) {
 		this.notDoneLabParameterBloodChemistry = notDoneLabParameterBloodChemistry;
 	}
 

@@ -3,10 +3,9 @@ package Bio.model;
 import java.io.InputStream;
 import java.sql.Date;
 
-public class BaselineLaboratoryDataCoagulation {
-	private int BaselineLaboratoryDataCoagulationId;
+public class BaselineLaboratoryDataPlatelet {
+	private int baselineLaboratoryDataPlateletId;
 	private Date dateOfBloodCollection;
-	// Hematology
 	private boolean notDoneHematology;
 	private String hemoglobin;
 	private String hematocrit;
@@ -17,14 +16,8 @@ public class BaselineLaboratoryDataCoagulation {
 	private String eosinophils;
 	private String basophils;
 	private String plateletCount;
-	// Coagulation Testing
-	private boolean notDoneLabParameterCoagulation;
-	private String factorViiiLevel;
-	private String factorIxLevel;
-	private String inhibitorAssay;
-	private String bethesdaUnits;
 	// Blood Chemistry
-	private boolean notDoneLabParameterBloodChemistry;
+	private boolean notDoneBloodChemistry;
 	private String creatinine;
 	private String uricAcid;
 	private String na;
@@ -32,14 +25,22 @@ public class BaselineLaboratoryDataCoagulation {
 	private String sgot;
 	private String sgpt;
 	private String ldh;
-	private String resultImagingStudies;
+	private String anaTiter;
+	private String hepatitisCRna;
+	private Date datePerformedBoneMarrowAspirateAndBiopsy;
+	private String descriptionBoneMarrowAspirateAndBiopsy;
+	private InputStream[] attachedBoneMarrowAspirateAndBiopsy;
+	private Date datePerformedUnderGIEndoscopy;
+	private String descriptionUnderGIEndoscopy;
+	private InputStream[] attachedHPylori;
+	private String formOfITP;
 
-	public int getBaselineLaboratoryDataCoagulationId() {
-		return BaselineLaboratoryDataCoagulationId;
+	public int getBaselineLaboratoryDataPlateletId() {
+		return baselineLaboratoryDataPlateletId;
 	}
 
-	public void setBaselineLaboratoryDataCoagulationId(int baselineLaboratoryDataCoagulationId) {
-		BaselineLaboratoryDataCoagulationId = baselineLaboratoryDataCoagulationId;
+	public void setBaselineLaboratoryDataPlateletId(int baselineLaboratoryDataPlateletId) {
+		this.baselineLaboratoryDataPlateletId = baselineLaboratoryDataPlateletId;
 	}
 
 	public Date getDateOfBloodCollection() {
@@ -50,7 +51,7 @@ public class BaselineLaboratoryDataCoagulation {
 		this.dateOfBloodCollection = dateOfBloodCollection;
 	}
 
-	public boolean getNotDoneHematology() {
+	public boolean isNotDoneHematology() {
 		return notDoneHematology;
 	}
 
@@ -130,52 +131,12 @@ public class BaselineLaboratoryDataCoagulation {
 		this.plateletCount = plateletCount;
 	}
 
-	public boolean getNotDoneLabParameterCoagulation() {
-		return notDoneLabParameterCoagulation;
+	public boolean isNotDoneBloodChemistry() {
+		return notDoneBloodChemistry;
 	}
 
-	public void setNotDoneLabParameterCoagulation(boolean notDoneLabParameterCoagulation) {
-		this.notDoneLabParameterCoagulation = notDoneLabParameterCoagulation;
-	}
-
-	public String getFactorViiiLevel() {
-		return factorViiiLevel;
-	}
-
-	public void setFactorViiiLevel(String factorViiiLevel) {
-		this.factorViiiLevel = factorViiiLevel;
-	}
-
-	public String getFactorIxLevel() {
-		return factorIxLevel;
-	}
-
-	public void setFactorIxLevel(String factorIxLevel) {
-		this.factorIxLevel = factorIxLevel;
-	}
-
-	public String getInhibitorAssay() {
-		return inhibitorAssay;
-	}
-
-	public void setInhibitorAssay(String inhibitorAssay) {
-		this.inhibitorAssay = inhibitorAssay;
-	}
-
-	public String getBethesdaUnits() {
-		return bethesdaUnits;
-	}
-
-	public void setBethesdaUnits(String bethesdaUnits) {
-		this.bethesdaUnits = bethesdaUnits;
-	}
-
-	public boolean getNotDoneLabParameterBloodChemistry() {
-		return notDoneLabParameterBloodChemistry;
-	}
-
-	public void setNotDoneLabParameterBloodChemistry(boolean notDoneLabParameterBloodChemistry) {
-		this.notDoneLabParameterBloodChemistry = notDoneLabParameterBloodChemistry;
+	public void setNotDoneBloodChemistry(boolean notDoneBloodChemistry) {
+		this.notDoneBloodChemistry = notDoneBloodChemistry;
 	}
 
 	public String getCreatinine() {
@@ -234,12 +195,76 @@ public class BaselineLaboratoryDataCoagulation {
 		this.ldh = ldh;
 	}
 
-	public String getResultImagingStudies() {
-		return resultImagingStudies;
+	public String getAnaTiter() {
+		return anaTiter;
 	}
 
-	public void setResultImagingStudies(String resultImagingStudies) {
-		this.resultImagingStudies = resultImagingStudies;
+	public void setAnaTiter(String anaTiter) {
+		this.anaTiter = anaTiter;
+	}
+
+	public String getHepatitisCRna() {
+		return hepatitisCRna;
+	}
+
+	public void setHepatitisCRna(String hepatitisCRna) {
+		this.hepatitisCRna = hepatitisCRna;
+	}
+
+	public Date getDatePerformedBoneMarrowAspirateAndBiopsy() {
+		return datePerformedBoneMarrowAspirateAndBiopsy;
+	}
+
+	public void setDatePerformedBoneMarrowAspirateAndBiopsy(Date datePerformedBoneMarrowAspirateAndBiopsy) {
+		this.datePerformedBoneMarrowAspirateAndBiopsy = datePerformedBoneMarrowAspirateAndBiopsy;
+	}
+
+	public String getDescriptionBoneMarrowAspirateAndBiopsy() {
+		return descriptionBoneMarrowAspirateAndBiopsy;
+	}
+
+	public void setDescriptionBoneMarrowAspirateAndBiopsy(String descriptionBoneMarrowAspirateAndBiopsy) {
+		this.descriptionBoneMarrowAspirateAndBiopsy = descriptionBoneMarrowAspirateAndBiopsy;
+	}
+
+	public InputStream[] getAttachedBoneMarrowAspirateAndBiopsy() {
+		return attachedBoneMarrowAspirateAndBiopsy;
+	}
+
+	public void setAttachedBoneMarrowAspirateAndBiopsy(InputStream[] attachedBoneMarrowAspirateAndBiopsy) {
+		this.attachedBoneMarrowAspirateAndBiopsy = attachedBoneMarrowAspirateAndBiopsy;
+	}
+
+	public Date getDatePerformedUnderGIEndoscopy() {
+		return datePerformedUnderGIEndoscopy;
+	}
+
+	public void setDatePerformedUnderGIEndoscopy(Date datePerformedUnderGIEndoscopy) {
+		this.datePerformedUnderGIEndoscopy = datePerformedUnderGIEndoscopy;
+	}
+
+	public String getDescriptionUnderGIEndoscopy() {
+		return descriptionUnderGIEndoscopy;
+	}
+
+	public void setDescriptionUnderGIEndoscopy(String descriptionUnderGIEndoscopy) {
+		this.descriptionUnderGIEndoscopy = descriptionUnderGIEndoscopy;
+	}
+
+	public InputStream[] getAttachedHPylori() {
+		return attachedHPylori;
+	}
+
+	public void setAttachedHPylori(InputStream[] attachedHPylori) {
+		this.attachedHPylori = attachedHPylori;
+	}
+
+	public String getFormOfITP() {
+		return formOfITP;
+	}
+
+	public void setFormOfITP(String formOfITP) {
+		this.formOfITP = formOfITP;
 	}
 
 }

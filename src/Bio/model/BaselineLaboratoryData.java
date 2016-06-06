@@ -6,7 +6,7 @@ import java.sql.Date;
 public class BaselineLaboratoryData {
 	private int laboratoryDataId;
 	private Date dateOfBloodCollection;
-	private Boolean notDoneHematology;
+	private boolean notDoneHematology;
 	private String hemoglobin;
 	private String hematocrit;
 	private String whiteBloodCells;
@@ -19,7 +19,7 @@ public class BaselineLaboratoryData {
 	private String metamyelocytes;
 	private String blasts;
 	private String plateletCount;
-	private Boolean notDoneOtherLabParameter;
+	private boolean notDoneOtherLabParameter;
 	private String creatinine;
 	private String uricAcid;
 	private String reticulocyteCount;
@@ -63,11 +63,11 @@ public class BaselineLaboratoryData {
 		this.dateOfBloodCollection = dateOfBloodCollection;
 	}
 
-	public Boolean getNotDoneHematology() {
+	public boolean getNotDoneHematology() {
 		return notDoneHematology;
 	}
 
-	public void setNotDoneHematology(Boolean notDoneHematology) {
+	public void setNotDoneHematology(boolean notDoneHematology) {
 		this.notDoneHematology = notDoneHematology;
 	}
 
@@ -167,11 +167,11 @@ public class BaselineLaboratoryData {
 		this.plateletCount = plateletCount;
 	}
 
-	public Boolean getNotDoneOtherLabParameter() {
+	public boolean getNotDoneOtherLabParameter() {
 		return notDoneOtherLabParameter;
 	}
 
-	public void setNotDoneOtherLabParameter(Boolean notDoneOtherLabParameter) {
+	public void setNotDoneOtherLabParameter(boolean notDoneOtherLabParameter) {
 		this.notDoneOtherLabParameter = notDoneOtherLabParameter;
 	}
 
