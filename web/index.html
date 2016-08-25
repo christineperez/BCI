@@ -35,15 +35,17 @@
 					<center>
 						<img src="images/user.png" width="80px"/>
 						<form id="loginForm" name="loginForm" class="form-horizontal"  style="font-size:20px" action="home.html">
+							
 							<div class="form-group">
 								<div class="col-lg-12">
-									<br/>
-									<input type="text" class="form-control" placeholder="Username" name="loginUsername" style="width: 100%; font-weight: bold; font-size:20px; background-color: #dcdcdc; border-radius: 0px; letter-spacing: 3px;"/>
+									<input type="text" class="form-control" placeholder="Username" name="loginUsername" style="width: 100%; background-color: #dcdcdc;  font-weight: bold; font-size:20px; letter-spacing: 3px;" 
+									required data-fv-notempty-message="The username is required"/>
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-lg-12">
-									<input type="password" class="form-control" placeholder="Password" name="loginPassword" style="width: 100%; background-color: #dcdcdc;  font-weight: bold; font-size:20px; letter-spacing: 3px;"/>
+									<input type="password" class="form-control" placeholder="Password" name="loginPassword" style="width: 100%; background-color: #dcdcdc;  font-weight: bold; font-size:20px; letter-spacing: 3px;" 
+									required data-fv-notempty-message="The password is required"/>
 								</div>
 							</div>
 							<div class="form-group">
@@ -105,6 +107,7 @@
 	    .on('err.form.fv', function(e) {
 	        generateCaptcha();
 	    });
+
 	});
 	</script>
 	
