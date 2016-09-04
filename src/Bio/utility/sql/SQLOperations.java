@@ -9,7 +9,9 @@ import javax.sql.*;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
+import Bio.model.AccountBean;
 import Bio.utility.sql.SQLCommands;
+
 
 public class SQLOperations implements SQLCommands {
 
@@ -41,5 +43,55 @@ public class SQLOperations implements SQLCommands {
 		return (connection != null) ? connection : getDBConnection();
 	}
 
+	//check login
+	public static boolean loginCheck(String username, String password, Connection connection){
+	    boolean login = false;
+	    ResultSet rs = null;
+	    try {
+	    	PreparedStatement pstmt =
+					connection.prepareStatement(LOGIN_DETAILS);
+		pstmt.setString(1, username);
+		pstmt.setString(2, password);
+		rs=pstmt.executeQuery();
+	    rs = pstmt.getResultSet();
+	    login = rs.first(); 
+	    
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	    return login;
+	}
+	public static AccountBean searchAccount(String username, 
+			Connection connection) {
+			
+			AccountBean ab= new AccountBean();
+			
+			try{
+				PreparedStatement pstmt =
+							connection.prepareStatement(SEARCH_ACCOUNT);
+				pstmt.setString(1, username);
+				ResultSet rs=pstmt.executeQuery();
+				
+				while(rs.next()){
+					ab.setAccountID(rs.getInt("AccountID"));
+					ab.setPersonalInfoID(rs.getInt("PersonalInfoID"));
+					ab.setUsername(rs.getString("Username"));
+					ab.setPassword(rs.getString("Password"));
+					ab.setSalt(rs.getString("Salt"));
+					ab.setRoleID(rs.getInt("RoleID"));
+					ab.setActive(rs.getInt("Active"));
+				}
+					
+			}
+			catch(SQLException sqle){
+				System.out.println("SQLException - searchAccount:" 
+						+ sqle.getMessage());
+				
+				return ab;
+			}
+			return ab;
+			
+		}
+	
 	
 }
