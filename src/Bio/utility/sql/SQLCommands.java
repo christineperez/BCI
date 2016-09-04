@@ -5,4 +5,5 @@ public interface SQLCommands {
 			+ "DateOfBirth, Address, CivilStatus, Occupation, DateOfEntry) values(?,?,?,?,?,?,?,?,?,CURRENT_TIMESTAMP())";
 	String LOGIN_DETAILS="select Username, Password from AccountTable where Username=? and Password=?";
 	String SEARCH_ACCOUNT="select * from AccountTable where Username=?";
+	String DELETE_PATIENT="update PatientDiseaseTable set Active=? where ControlNo=?";
 }
