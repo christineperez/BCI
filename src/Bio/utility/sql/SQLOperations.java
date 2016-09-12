@@ -10,7 +10,9 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
 import Bio.model.AccountBean;
+import Bio.model.AddPatientBean;
 import Bio.utility.sql.SQLCommands;
+import ust.crs.model.CRSBean;
 
 
 public class SQLOperations implements SQLCommands {
@@ -115,5 +117,25 @@ public class SQLOperations implements SQLCommands {
 		
 		return updated;
 	}
-	
+	public static boolean addPatient(AddPatientBean patient, 
+			Connection connection) {
+			
+			try {
+		        PreparedStatement pstmt = connection.prepareStatement(ADD_PATIENT);
+		        pstmt.setString(1, patient.getFirstName());
+		        pstmt.setString(2, patient.getMiddleName());
+		        pstmt.setString(3, patient.getLastName());
+		        pstmt.setString(4, patient.getGender());
+		        pstmt.setDate(5, patient.getDate());
+		        pstmt.setString(6, patient.getAddress());
+		        pstmt.setString(7, patient.getCivilStatus());
+		        pstmt.setString(8, patient.getOccupation());
+		        pstmt.setDate(9, patient.getDateOfEntry());
+		        pstmt.executeUpdate(); // execute insert statement  
+			} catch (SQLException sqle) {
+				System.out.println("SQLException - addPatient: " + sqle.getMessage());
+				return false; 
+			}	
+			return true;
+	}
 }
