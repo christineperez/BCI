@@ -15,10 +15,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import Bio.utility.addPatient;
 
-@WebServlet({"/aapnhmds-baseline-clinicaldata.html",
-	"/leukemia-baseline-clinicaldata.html",
-	"/lymphoma-baseline-clinicaldata.html"})
-public class addPatientAapnhmdsLeukemia extends HttpServlet {
+@WebServlet("/coagulationdisease-baseline-clinicaldata.html")
+public class addPatientCoagulation extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	private Connection connection;
@@ -43,14 +41,11 @@ public class addPatientAapnhmdsLeukemia extends HttpServlet {
 		String civilStatus=request.getParameter("civilStatus");
 		String occupation=request.getParameter("occupation");
 		java.sql.Date dateOfEntry = java.sql.Date.valueOf(request.getParameter("dateOfEntry"));
-		String tissueSpecCollected=request.getParameter("specimen");
-		String[] specimen=request.getParameterValues("specimen[]");
 		
 		addPatient ap=new addPatient();
 		ap.addPatient(0, lastName, firstName, middleInitial, gender, 
-				dateOfBirth, address, civilStatus, occupation, dateOfEntry, tissueSpecCollected, specimen, connection);
-		
-		
+				dateOfBirth, address, civilStatus, occupation, dateOfEntry, null,null,connection);
+
 	}
 
 }
