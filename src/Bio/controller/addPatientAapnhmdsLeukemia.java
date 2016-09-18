@@ -50,7 +50,18 @@ public class addPatientAapnhmdsLeukemia extends HttpServlet {
 		ap.addPatient(0, lastName, firstName, middleInitial, gender, 
 				dateOfBirth, address, civilStatus, occupation, dateOfEntry, tissueSpecCollected, specimen, connection);
 		
-		
+		if(request.getParameter("action").equals("aapnhmds")){
+			getServletContext().getRequestDispatcher("/aapnhmds-view-patients.html");
+		}
+		else if(request.getParameter("action").equals("coagulation")){
+			getServletContext().getRequestDispatcher("/coagulationdisease-view-patients.html");
+		}
+		else if(request.getParameter("action").equals("leukemia")){
+			getServletContext().getRequestDispatcher("/leukemia-baseline-generaldata.html");
+		}
+		else if(request.getParameter("action").equals("lymphoma")){
+			getServletContext().getRequestDispatcher("/lymphoma-view-patients.html");
+		}
 	}
 
 }
